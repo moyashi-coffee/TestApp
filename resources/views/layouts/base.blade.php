@@ -73,11 +73,7 @@
         </nav>
 
         <main class="py-4">
-            <div class="comment">
-                yield
-            </div>
-            @yield('layouts/app')
-
+            @yield('layouts.app')
         </main>
     </div>
 </body>

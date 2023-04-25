@@ -19,8 +19,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Auth::routes();
+/*
+このメソッドは以下の場所で定義されている。
+TestApp\vendor\laravel\framework\src\Illuminate\Support\Facades\Auth.php 90行目あたり
+
+*/
 
 // Route::get('/', function () {
 //     return view('home');
