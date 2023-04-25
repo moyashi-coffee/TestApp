@@ -24,6 +24,19 @@ Auth::routes();
 このメソッドは以下の場所で定義されている。
 TestApp\vendor\laravel\framework\src\Illuminate\Support\Facades\Auth.php 90行目あたり
 
+        static::$app->make('router')->auth($options);
+        
+        routes\web.php の Auth::routes();で実際に実行されるメソッドが make('router')->auth($options); の部分となる。
+        
+        $appについて
+        以下の場所で定義されている
+        TestApp\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php 20行目あたり
+
+        make('router')について
+        TestApp\vendor\laravel\framework\src\Illuminate\Container\Container.php 700行目あたり
+        resolve メソッドを呼び出して abstract に 'router' 文字列を渡している
+
+        
 */
 
 // Route::get('/', function () {
