@@ -24,3 +24,6 @@ Route::post('/tasks', [App\Http\Controllers\TaskController::class,'store']);
 Route::get('/tasks{task}', [App\Http\Controllers\TaskController::class,'show']);
 Route::put('/tasks{task}', [App\Http\Controllers\TaskController::class,'update']);
 Route::delete('/tasks/{task}', [App\Http\Controllers\TaskController::class,'delete']);
+
+
+Route::get('user-agent', [\App\Http\Controllers\UserAgentController::class], 'index');
