@@ -1,5 +1,5 @@
 @extends('layouts.base')
 
-@section('layout.app')
+@section('content')
     <header-component></header-component>
 @endsection
