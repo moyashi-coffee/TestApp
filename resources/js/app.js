@@ -7,7 +7,7 @@
 import './bootstrap';
 import { createApp } from 'vue';
 //Vue Router
-// import VueRouter from 'vue-router';
+import Router from './router';
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -21,6 +21,7 @@ const app = createApp({
 });
 
 import ExampleComponent from './components/ExampleComponent.vue';
+import router from './router';
 app.component('example-component', ExampleComponent);
 
 /**
@@ -57,4 +58,4 @@ Object.entries(import.meta.glob('./**/*.vue', { eager: true })).forEach(([path, 
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-app.mount('#app');
+app.use(router).mount('#app');
