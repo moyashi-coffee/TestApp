@@ -7,7 +7,8 @@
 import './bootstrap';
 import { createApp } from 'vue';
 //Vue Router
-import Router from './router';
+// import router from './router';
+import App from "./App.vue";
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -16,7 +17,8 @@ import Router from './router';
  */
 
 const app = createApp({
-    el: '#app',
+    App
+    // el: '#app',
     // router
 });
 
